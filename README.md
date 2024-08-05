@@ -7,7 +7,7 @@ Send log message as a job to beanstalk
 
 ```
 
-composer require sky40280/beanstalk-logger-job
+composer require sky40280/beanstalk-logger-channel
 
 ```
 
