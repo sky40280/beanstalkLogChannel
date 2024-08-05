@@ -17,7 +17,7 @@ class BeanstalkLogger
         return new Logger(
             config('app.name'),
             [
-                new BeanstalkLogger($config),
+                new BeanstalkHandler($config),
             ]
         );
     }
