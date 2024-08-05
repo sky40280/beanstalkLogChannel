@@ -19,5 +19,6 @@
             "name": "peipei",
             "email": "sky40280@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev"
 }
