@@ -1,5 +1,5 @@
 {
-    "name": "peipei/beanstalk-logger-channel",
+    "name": "iiot_ateam/beanstalklogchannel",
     "description": "Send log message as a job to beanstalk",
     "type": "library",
     "require": {
