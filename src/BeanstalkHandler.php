@@ -32,7 +32,7 @@ class BeanstalkHandler extends AbstractProcessingHandler
             $beanstalk->useTube($this->tube)->put(json_encode([
                 "worker" => $this->appName,
                 "level" => $record["level_name"],
-                "error" => $record["message"]
+                "error" => json_decode($record["message"]) ?? stripslashes($record["message"])
             ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
         } catch (Exception $exception) {
             Log::channel('single')->error($exception->getMessage());
